@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sulai Pharma | Medicines &amp; General Products, Nashik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#f2f9f4;--surface:#ffffff;--ink:#0f2a1a;--muted:#48604f;--brand:#0f7a3d;--accent:#9bd84e;--line:#c9dfd0;--on-brand:#ffffff;--wa:#1faa59}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a11;--surface:#122519;--ink:#e5f4ea;--muted:#9bb8a5;--brand:#3fcf79;--accent:#b4e66e;--line:#244632;--on-brand:#05200f;--wa:#2fd06e}}
+:root[data-theme="dark"]{--bg:#0b1a11;--surface:#122519;--ink:#e5f4ea;--muted:#9bb8a5;--brand:#3fcf79;--accent:#b4e66e;--line:#244632;--on-brand:#05200f;--wa:#2fd06e}
+*{box-sizing:border-box}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+svg{display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 22px "Bricolage Grotesque",sans-serif;color:var(--brand)}
+.logo svg{width:38px;height:38px}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted);font-size:15px}
+nav a:hover,nav a:focus-visible{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hero{padding:68px 0 60px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(36px,6vw,62px);font-weight:700;letter-spacing:-.02em}
+.hero p{color:var(--muted);max-width:46ch;margin:20px 0 28px;font-size:19px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--brand);color:var(--on-brand);padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:500}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.btn.wa{background:var(--wa);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.caps{position:relative;height:290px}
+.cap{position:absolute;width:190px;height:72px;border-radius:999px;overflow:hidden;display:flex;box-shadow:0 0 0 1.5px var(--line)}
+.cap i{flex:1}.cap i:first-child{background:var(--brand)}.cap i:last-child{background:var(--accent)}
+.cap.b i:first-child{background:var(--accent)}.cap.b i:last-child{background:var(--surface)}
+.cap.c i:first-child{background:var(--surface)}.cap.c i:last-child{background:var(--brand)}
+.c1{top:10px;left:10%;transform:rotate(-24deg)}
+.c2{top:110px;left:38%;transform:rotate(18deg)}
+.c3{top:205px;left:6%;transform:rotate(-8deg)}
+section{padding:60px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,4vw,40px);margin-bottom:12px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}
+.grid div{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 -1px -1px 0}
+.grid h3{font-size:20px;margin-bottom:6px}
+.grid p{margin:0;color:var(--muted);font-size:15.5px}
+.points{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px}
+.points h3{font-size:21px;margin-bottom:8px}
+.points p{margin:0;color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.contact dl{margin:0}
+.contact dt{font-weight:500;margin-top:14px}
+.contact dt:first-child{margin-top:0}
+.contact dd{margin:2px 0 0;color:var(--muted)}
+.btn.ig{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:10px;z-index:6}
+.float a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.float svg{width:28px;height:28px;fill:#fff}
+.float .fw{background:var(--wa)}.float .fc{background:var(--brand)}
+.float .fc svg{fill:var(--on-brand)}
+@media (max-width:760px){.hero .wrap,.contact{grid-template-columns:1fr}.caps{height:250px}nav{gap:14px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Sulai Pharma home">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="20" fill="var(--brand)"/>
+        <g transform="rotate(-40 20 20)">
+          <rect x="7" y="13.5" width="26" height="13" rx="6.5" fill="var(--on-brand)"/>
+          <path d="M20 13.5h6.5a6.5 6.5 0 0 1 0 13H20z" fill="var(--accent)"/>
+        </g>
+        <path d="M20 5.5v5M17.5 8h5" stroke="var(--on-brand)" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      Sulai Pharma
+    </a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Your neighbourhood pharmacy in DGP Nagar.</h1>
+        <p>Medicines and everyday health products, open every day from 8:30 AM to 11:00 PM.</p>
+        <div class="btns">
+          <a class="btn wa" href="https://wa.me/917887696125?text=Hello%20Sulai%20Pharma%2C%20I%20want%20to%20order" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5.04-1.6A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 15l-.3-.2-3 .95.98-2.9-.2-.3A8.1 8.1 0 0 1 12.04 3.8zM8.6 7.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3l-1.800-.9c-.2-.1-.5-.1-.6.100l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.100-.4-2.100-1.300-.8-.7-1.300-1.600-1.500-1.800-.1-.3 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.5.1-.2 0-.3 0-.5l-.8-1.900c-.2-.5-.4-.4-.6-.4z"/></svg>
+            Order on WhatsApp
+          </a>
+          <a class="btn" href="tel:+917887696125">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.100.4 2.300.6 3.500.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.500c.6 0 1 .4 1 1 0 1.200.2 2.400.6 3.500.1.300 0 .700-.2 1z"/></svg>
+            Call now
+          </a>
+        </div>
+      </div>
+      <div class="caps" aria-hidden="true">
+        <div class="cap c1"><i></i><i></i></div>
+        <div class="cap b c2"><i></i><i></i></div>
+        <div class="cap c c3"><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About Sulai Pharma</h2>
+      <p class="lead">Sulai Pharma opened on 20 June 2024 in DGP Nagar 2, Nashik. We stock medicines and general products for the whole family, and we stay open late so you can get what you need when you need it.</p>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="wrap">
+      <h2>What you can find here</h2>
+      <p class="lead">All general products and medicines. Message us on WhatsApp if you are looking for something specific.</p>
+      <div class="grid">
+        <div><h3>Medicines</h3><p>Tablets, capsules, syrups, injections and ointments.</p></div>
+        <div><h3>Health &amp; wellness</h3><p>Vitamins, supplements and daily health needs.</p></div>
+        <div><h3>First aid</h3><p>Bandages, antiseptics, cotton and dressings.</p></div>
+        <div><h3>Baby &amp; family care</h3><p>Baby products and household health items.</p></div>
+        <div><h3>Personal care</h3><p>Everyday hygiene and personal care products.</p></div>
+        <div><h3>General products</h3><p>Other daily-use items available at the shop.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div>
+        <h2>Visit or message us</h2>
+        <p class="lead">Order on WhatsApp, call the shop, or walk in. We are open all seven days.</p>
+        <div class="btns">
+          <a class="btn wa" href="https://wa.me/917887696125?text=Hello%20Sulai%20Pharma" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="tel:+917887696125">Call 7887696125</a>
+          <a class="btn ig" href="https://www.instagram.com/sulaipharma" target="_blank" rel="noopener">Instagram @sulaipharma</a>
+        </div>
+      </div>
+      <dl>
+        <dt>Address</dt><dd>Shop No 3, Rajashree Narayani Apartment, Near Sonal Dairy, DGP Nagar 2, Nashik 4</dd>
+        <dt>Phone and WhatsApp</dt><dd><a href="tel:+917887696125">7887696125</a></dd>
+        <dt>Instagram</dt><dd><a href="https://www.instagram.com/sulaipharma" target="_blank" rel="noopener">@sulaipharma</a></dd>
+        <dt>Hours</dt><dd>Monday to Sunday, 8:30 AM to 11:00 PM</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Sulai Pharma, Nashik. All rights reserved.</div>
+</footer>
+
+<div class="float">
+  <a class="fw" href="https://wa.me/917887696125?text=Hello%20Sulai%20Pharma" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5.04-1.6A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 15l-.3-.2-3 .95.98-2.9-.2-.3A8.1 8.1 0 0 1 12.04 3.8zM8.6 7.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3l-1.8-.9c-.2-.1-.5-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.8-.1-.3 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.5.1-.2 0-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4z"/></svg>
+  </a>
+  <a class="fc" href="tel:+917887696125" aria-label="Call Sulai Pharma">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1z"/></svg>
+  </a>
+</div>
+</body>
+</html>
